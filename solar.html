@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <style>
+            .alert {
+                color: aqua;
+                background: green;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="heading">Solar System</h1>
+            <p>The solar system consists of 8 different planets.They are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune</p>
+        </header>
+        
+        <script>
+            let div = document.createElement('div');
+            div.id = 'paragraph';
+            div.className = "alert";
+            div.innerHTML = "<p>The solar system is a star system.</p>";
+            document.body.append(div);
+            let heading = document.getElementByID("heading");
+            heading.innerHTML = "&#128512;";
+            document.querySelector("header p").innerHTML = "<strong>Good Job !</strong>";
+        </script>
+    </body>
+</html>
